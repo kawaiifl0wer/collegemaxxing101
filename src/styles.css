@@ -1,0 +1,75 @@
+body {
+  font-family: "Fraunces", serif;
+  background-color: #f8f6ef;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoletta";
+  src: url("fonts/recoletta-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tabs {
+  background-color: #d2ddc0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: black;
+  button {
+    background-color: #d2ddc0;
+    border-style: none;
+  }
+}
+
+.left h1 {
+  color: #436d40;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.2rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+}
+
+.right a {
+  text-decoration: none;
+}
+
+.right button {
+  background: transparent;
+  border: none;
+  color: #436d40;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+  margin-left: 10px;
+  position: relative;
+}
+.right button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-50%);
+}
+.right button:hover::after {
+  width: 100%;
+}
+
+.right button:hover {
+  background-color: #c9d4b9;
+}

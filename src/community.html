@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CM101 | Community</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/community.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Thai:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="tabs">
+      <div class="left">
+        <h1>CM101</h1>
+      </div>
+      <div class="right">
+        <a href="index.html"> <button>home</button></a>
+        <a href="/src/opportunities.html"> <button>opportunities</button></a>
+        <a href="/src/study.html"> <button>study</button></a>
+        <a href="/src/community.html"> <button>community</button></a>
+        <a href="/src/references.html"> <button>references</button></a>
+      </div>
+    </div>
+
+    <div class="community-wrapper">
+      <div class="top-row">
+        <div class="card-box">
+          <h2 class="jumble-title">website suggestions</h2>
+          <input type="text" id="suggName" placeholder="your name" />
+          <textarea id="suggText" placeholder="what should we add?"></textarea>
+          <button
+            class="post-btn"
+            onclick="savePost('gen', 'suggName', 'suggText')"
+          >
+            post suggestion
+          </button>
+          <div id="genFeed" class="feed"></div>
+        </div>
+
+        <div class="card-box">
+          <h2 class="jumble-title">message the founders</h2>
+          <form action="https://formspree.io/f/xeepjlgo" method="POST">
+            <input type="text" name="name" placeholder="your name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="your email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="why are you messaging?"
+              required
+            ></textarea>
+            <button class="post-btn" type="submit">send email</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="bottom-row">
+        <div class="card-box">
+          <h2 class="jumble-title">ap class tips & hacks</h2>
+          <input type="text" id="apName" placeholder="your name" />
+          <textarea
+            id="apText"
+            placeholder="which AP and what's the tip?"
+          ></textarea>
+          <button class="post-btn" onclick="savePost('ap', 'apName', 'apText')">
+            post tip
+          </button>
+          <div id="apFeed" class="feed"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        render("gen");
+        render("ap");
+      };
+
+      function savePost(type, nameId, textId) {
+        const name = document.getElementById(nameId).value;
+        const text = document.getElementById(textId).value;
+        if (!name || !text) return alert("Fill out both fields!");
+        const storageKey =
+          type === "gen" ? "cm101_gen_posts" : "cm101_ap_posts";
+        let posts = JSON.parse(localStorage.getItem(storageKey)) || [];
+        posts.unshift({ id: Date.now(), name, text, votes: 0 });
+        localStorage.setItem(storageKey, JSON.stringify(posts));
+        document.getElementById(textId).value = "";
+        render(type);
+      }
+
+      function render(type) {
+        const storageKey =
+          type === "gen" ? "cm101_gen_posts" : "cm101_ap_posts";
+        const feedId = type === "gen" ? "genFeed" : "apFeed";
+        const posts = JSON.parse(localStorage.getItem(storageKey)) || [];
+        const container = document.getElementById(feedId);
+        container.innerHTML = "";
+        posts.forEach((p) => {
+          const div = document.createElement("div");
+          div.className = "post-item";
+          div.innerHTML = `
+                    <strong>${p.name}</strong>: ${p.text}
+                    <div class="post-actions">
+                        <button class="vote-btn" onclick="vote('${type}', ${p.id}, 1)">👍</button>
+                        <span>${p.votes}</span>
+                        <button class="vote-btn" onclick="vote('${type}', ${p.id}, -1)">👎</button>
+                        <button class="del-btn" onclick="del('${type}', ${p.id})">delete</button>
+                    </div>`;
+          container.appendChild(div);
+        });
+      }
+
+      function vote(type, id, val) {
+        const storageKey =
+          type === "gen" ? "cm101_gen_posts" : "cm101_ap_posts";
+        let posts = JSON.parse(localStorage.getItem(storageKey));
+        const idx = posts.findIndex((p) => p.id === id);
+        posts[idx].votes += val;
+        localStorage.setItem(storageKey, JSON.stringify(posts));
+        render(type);
+      }
+
+      function del(type, id) {
+        const storageKey =
+          type === "gen" ? "cm101_gen_posts" : "cm101_ap_posts";
+        let posts = JSON.parse(localStorage.getItem(storageKey));
+        posts = posts.filter((p) => p.id !== id);
+        localStorage.setItem(storageKey, JSON.stringify(posts));
+        render(type);
+      }
+    </script>
+  </body>
+</html>

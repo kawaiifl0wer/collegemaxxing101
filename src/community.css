@@ -1,0 +1,102 @@
+/* --- COMMUNITY BOXES LAYOUT --- */
+.community-wrapper {
+  max-width: 1200px;
+  margin: 50px auto; /* Breathable gap below the bar */
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.top-row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.card-box {
+  flex: 1;
+  min-width: 320px;
+  background: white;
+  padding: 30px; /* Internal padding for text */
+  border: 3px solid #2e7d32;
+  border-radius: 20px;
+
+  box-sizing: border-box;
+}
+
+.jumble-title {
+  font-family: "Young Serif", sans-serif;
+  color: #2e7d32;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* --- FORMS & FEED --- */
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.post-btn {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-family: "Young Serif", sans-serif;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+
+.post-btn:hover {
+  background: #1b5e20;
+}
+
+.feed {
+  margin-top: 25px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.post-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border-left: 6px solid #2e7d32;
+  display: block;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.vote-btn {
+  background: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.del-btn {
+  background: #ffcdd2;
+  color: #c62828;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}

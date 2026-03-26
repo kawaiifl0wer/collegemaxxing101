@@ -1,0 +1,206 @@
+.arc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin-top: -110px;
+  pointer-events: none;
+  animation: fadeInUp 3s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.subtitle {
+  font-family: "Playpen Sans Thai", cursive;
+  color: #2e7d32;
+  font-size: 24px;
+  margin-top: -110px;
+  font-weight: normal;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out 0.5s forwards;
+}
+
+.curved-svg {
+  width: 1000px;
+  height: auto;
+}
+
+.curved-svg text {
+  font-family: "Young Serif", serif !important;
+}
+
+.tabs {
+  position: relative;
+  z-index: 5;
+}
+.image-section {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.smiskii {
+  display: block;
+  margin: 0 auto;
+  margin-top: -120px;
+  max-width: 80%;
+  height: auto;
+  animation: fadeInArc 3s ease-out forwards;
+}
+
+.about-section {
+  background-color: #f8f6ef;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 3px solid #2e7d32;
+  margin-top: 20px;
+}
+
+.about-content {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-content h2 {
+  font-family: "Playpen Sans Thai", cursive;
+  color: #2e7d32;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  font-family: "Playpen Sans Thai", cursive;
+  color: #333;
+  line-height: 1;
+  font-size: 1.1rem;
+}
+
+.founders-container {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.founder-card {
+  text-align: center;
+  width: 280px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.founder-card:hover {
+  border-color: #2e7d32;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.founder-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #2e7d32;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.founder-card h3 {
+  font-family: "Finger Paint", cursive;
+  color: #2e7d32;
+  margin: 15px 0 5px 0;
+  font-size: 1.2rem;
+}
+
+.founder-card p {
+  font-family: "Playpen Sans Thai", cursive;
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.founder-bio {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background: #e8f5e9;
+  border-radius: 10px;
+}
+
+.founder-bio p {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2e7d32;
+  margin: 0;
+}
+
+.founder-card:hover .founder-bio {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 15px;
+}
+
+.founder-card h3 {
+  margin: 10px 0 5px 0;
+  color: #2e7d32;
+  font-family: "Recoletta", Arial, sans-serif;
+}
+
+.founder-card .title {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.mission-section {
+  background-color: #f8f6ef;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 3px solid #2e7d32;
+  margin-top: 50px;
+}
+
+.mission-content {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mission-content h2 {
+  font-family: "Playpen Sans Thai", cursive;
+  color: #2e7d32;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mission-content p {
+  font-family: "Playpen Sans Thai", cursive;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}

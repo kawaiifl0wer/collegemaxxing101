@@ -1,0 +1,326 @@
+.opps-container {
+  text-align: center;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #d2ab80;
+}
+
+.main-title {
+  color: #2d5a27;
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+a:visited .card {
+  background-color: #d2ddc0;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.internship-section {
+  background-color: #f8f6ef;
+  padding: 60px 200px;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #d2ddc0;
+  width: 300px;
+  height: 180px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h2 {
+  color: white;
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+}
+
+.card p {
+  color: white;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.two-column-layout {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h3 {
+  font-size: 1.8rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  padding-left: 20px;
+}
+
+.column li {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .two-column-layout {
+    flex-direction: column;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.competitions-section {
+  text-align: center;
+}
+
+.competition-filters {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.filter-box {
+  background-color: #d2ddc0;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.competition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.competition-card {
+  background-color: #f4ede4;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+  height: 75%;
+}
+
+.competition-card:hover {
+  transform: translateY(-4px);
+  transition: 0.2s;
+}
+
+.competition-card[data-category="stem"] {
+  background-color: #f4d9ff;
+}
+
+.competition-card[data-category="humanities"] {
+  background-color: #f8dcdc;
+}
+
+.competition-card[data-category="speech"] {
+  background-color: #cfe2f3;
+}
+
+.competition-card[data-category="research"] {
+  background-color: #fff2cc;
+}
+
+.scholarship-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.scholarship-section h1 {
+  color: #dcb3b3;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.scholarship-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+.scholarship-table td {
+  border: 2px solid #ffc1c1;
+  padding: 40px 20px;
+  width: 33.33%;
+  vertical-align: middle;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.scholarship-table {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .scholarship-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: none;
+  }
+  .scholarship-table tr:last-child td:last-child {
+    border-bottom: 2px solid #ffc1c1;
+  }
+}
+
+.pill-header {
+  background-color: #d9bdb9;
+  border-radius: 100px;
+  padding: 10px 40px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.pill-header h1 {
+  color: white;
+  font-family: Georgia, serif;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.scroll-box {
+  background-color: #d9bdb9;
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: left;
+  height: 500px;
+  overflow-y: auto;
+  font-family: Georgia, serif;
+}
+
+.two-column-layout {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.column {
+  flex: 1;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.col-header {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.scroll-box h3 {
+  font-size: 1.6rem;
+  margin-top: 25px;
+}
+.scroll-box ul {
+  padding-left: 20px;
+}
+.scroll-box li {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+.scroll-box a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.filter-box[data-filter="stem"] {
+  background-color: #f4d9ff;
+}
+
+.filter-box[data-filter="humanities"] {
+  background-color: #f8dcdc;
+}
+
+.filter-box[data-filter="speech"] {
+  background-color: #cfe2f3;
+}
+
+.filter-box[data-filter="research"] {
+  background-color: #fff2cc;
+}
+
+.filter-box[data-filter="all"] {
+  background-color: #d2ddc0;
+}
+
+.filter-box:hover {
+  filter: brightness(0.9);
+  transition: 0.2s;
+}
+
+/*search css maybe delete testing...*/
+.search-container {
+  margin: 20px auto;
+  max-width: 500px;
+  width: 90%;
+}
+
+#compSearch {
+  width: 100%;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  border: 2px solid #d2ddc0;
+  outline: none;
+  font-family: Georgia, serif;
+  transition: all 0.3s ease;
+}
+
+#compSearch:focus {
+  border-color: #2d5a27;
+  box-shadow: 0 4px 10px rgba(45, 90, 39, 0.1);
+}
+
+/* Optional: Style for when a filter is "Active" */
+.filter-box.active {
+  outline: 3px solid #2d5a27;
+  transform: scale(1.05);
+}

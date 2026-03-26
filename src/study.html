@@ -1,0 +1,2484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/study.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="tabs">
+      <div class="left"><h1>CM101</h1></div>
+      <div class="right">
+        <a href="index.html"><button>home</button></a>
+        <a href="/src/opportunities.html"><button>opportunities</button></a>
+        <a href="/src/study.html"><button>study</button></a>
+        <a href="/src/community.html"><button>community</button></a>
+        <a href="/src/references.html"><button>references</button></a>
+      </div>
+    </div>
+
+    <div class="catalog-grid">
+      <a href="#ap" class="catalog-item">
+        <div class="image-container">
+          <div class="item-number">01</div>
+          <div class="placeholder-img">📚</div>
+        </div>
+        <div class="item-details">
+          <h3>AP Courses</h3>
+          <p>AP study guides, MCQ &amp; FRQ practice, and helpful videos</p>
+        </div>
+      </a>
+      <a href="#test" class="catalog-item">
+        <div class="image-container">
+          <div class="item-number">02</div>
+          <div class="placeholder-img">✍️</div>
+        </div>
+        <div class="item-details">
+          <h3>Test Prep</h3>
+          <p>
+            Practice tests to help you do your best on the SAT, ACT, &amp; PSAT!
+          </p>
+        </div>
+      </a>
+      <a href="#methods" class="catalog-item">
+        <div class="image-container">
+          <div class="item-number">03</div>
+          <div class="placeholder-img">📝</div>
+        </div>
+        <div class="item-details">
+          <h3>Study Methods</h3>
+          <p>Proven techniques to study smarter, not harder</p>
+        </div>
+      </a>
+      <a href="#help" class="catalog-item">
+        <div class="image-container">
+          <div class="item-number">04</div>
+          <div class="placeholder-img">📊</div>
+        </div>
+        <div class="item-details">
+          <h3>Helpful Resources</h3>
+          <p>Tutoring, tools, and helpful links for every subject</p>
+        </div>
+      </a>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- CONTENT SECTIONS -->
+    <div class="content-sections">
+      <!-- AP COURSES -->
+      <div id="ap" class="content-section">
+        <div class="section-header">
+          <h2>AP Courses</h2>
+          <span class="section-number">01</span>
+        </div>
+        <p class="section-intro">
+          Tips, resources, and insider advice for every AP class — organized by
+          subject area. Click any course to expand it. Difficulty ratings
+          reflect student-reported experiences from r/APStudents.
+        </p>
+
+        <!-- AP CAPSTONE -->
+        <p class="ap-group-label">AP Capstone</p>
+        <div class="ap-newspaper">
+          <!-- Art panel -->
+          <div class="ap-art-panel">
+            <div class="panel-emoji">🔬</div>
+            <div class="panel-divider"></div>
+            <div class="panel-title">AP Capstone</div>
+            <p class="panel-desc">
+              Capstone is a two-year program that develops research, writing,
+              and presentation skills through independent inquiry.
+            </p>
+            <div class="panel-stat">2 courses · AP Seminar → AP Research</div>
+            <div class="panel-divider"></div>
+            <p class="panel-desc" style="font-style: italic">
+              "The quality of your research question matters far more than your
+              results."
+            </p>
+          </div>
+          <div class="ap-list">
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🔬</span>
+                  <span class="ap-title">AP Research</span>
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span>
+                <span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Research is a year-long independent research course where
+                  you produce an academic paper and present it to a panel. The
+                  quality of your research question and methodology matters far
+                  more than your results.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Have a clear, narrow research gap by second semester — it's
+                    one of the most common points of failure.
+                  </li>
+                  <li>
+                    Do not wait until the week before to start writing.
+                    Consistent writing from February onward is the only way to
+                    finish strong.
+                  </li>
+                  <li>
+                    Avoid survey-based research. It requires extensive IRB
+                    paperwork and typically yields limited, non-generalizable
+                    results.
+                  </li>
+                  <li>
+                    Social science approaches — such as data mining with a
+                    theoretical framework, or critical textual analysis — tend
+                    to be both manageable and impressive.
+                  </li>
+                  <li>
+                    Use the five sample papers on the College Board website as
+                    direct models for structure and tone.
+                  </li>
+                  <li>
+                    A null result or hypothesis that isn't supported is
+                    completely acceptable — graders care about process, not
+                    outcome.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-research"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.reddit.com/r/APStudents"
+                    target="_blank"
+                    >r/APStudents →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🗣️</span>
+                  <span class="ap-title">AP Seminar</span>
+                </div>
+                <span class="ap-difficulty diff-easy">Easy–Medium</span>
+                <span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Seminar is a discussion and research-based course focused
+                  on analyzing multiple perspectives on complex topics.
+                  Performance depends heavily on your group work and individual
+                  writing.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Choose group members carefully — collaborative assignments
+                    make up a large portion of your grade.
+                  </li>
+                  <li>
+                    Pick a topic that genuinely interests you; sustained
+                    engagement over the year is much easier when you care about
+                    the subject.
+                  </li>
+                  <li>
+                    Do not procrastinate on the Team Multimedia Presentation or
+                    Individual Research Report — both require significant
+                    revision time.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-seminar"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.missinformationcourses.com/uploads/3/0/3/7/30372357/ap_seminar_portfolio_guide.pdf"
+                    target="_blank"
+                    >Portfolio Guide →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ARTS -->
+        <p class="ap-group-label">Arts</p>
+        <div class="ap-newspaper">
+          <div class="ap-art-panel">
+            <div class="panel-emoji">🎨</div>
+            <div class="panel-divider"></div>
+            <div class="panel-title">Arts</div>
+            <p class="panel-desc">
+              Portfolio-based AP arts courses reward creative process, sustained
+              inquiry, and thoughtful written evidence — not just finished
+              artwork.
+            </p>
+            <div class="panel-stat">5 courses available</div>
+            <div class="panel-divider"></div>
+            <p class="panel-desc" style="font-style: italic">
+              "You do not need to be an exceptional artist — you need to think
+              artistically."
+            </p>
+          </div>
+          <div class="ap-list">
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🎨</span
+                  ><span class="ap-title">AP 2-D Art and Design</span>
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  This portfolio-based course has three components: a Sustained
+                  Investigation, Selected Works, and Written Evidence. You do
+                  not need to be an exceptional artist — you need to think
+                  artistically and explore a clear inquiry.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Upload all process work (thumbnails, sketches, studies,
+                    notes) alongside finished pieces — College Board wants to
+                    see your creative process, not just the end result.
+                  </li>
+                  <li>
+                    Do not skimp on the written evidence. Explaining your
+                    intent, process, and artistic growth is just as important as
+                    the artwork itself.
+                  </li>
+                  <li>
+                    Use art terminology (color, balance, form, line, etc.) in
+                    your written responses wherever possible.
+                  </li>
+                  <li>
+                    For Selected Works, choose your five strongest pieces
+                    overall — they do not have to be from AP 2D and can include
+                    personal work.
+                  </li>
+                  <li>
+                    Experiment with mediums early. Photography, collage, and
+                    mixed media are all valid.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-2-d-art-and-design"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://campbellsartclass.weebly.com/samples-of-ap-2d-student-work.html"
+                    target="_blank"
+                    >Portfolio Examples →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🗿</span
+                  ><span class="ap-title">AP 3-D Art and Design</span>
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  A portfolio-based course emphasizing three-dimensional work,
+                  from ceramics to sculpture to mixed-media installation. No
+                  prior ceramics experience is required, but expect a learning
+                  curve with new materials.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Start building your portfolio early and document everything
+                    — moodboards, sketches, and progress photos all count as
+                    process work.
+                  </li>
+                  <li>
+                    Vary your materials and techniques across your Sustained
+                    Investigation to demonstrate versatility.
+                  </li>
+                  <li>
+                    Written evidence is heavily weighted. Be concise and make
+                    sure every word connects to your inquiry.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-3-d-art-and-design"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">✏️</span
+                  ><span class="ap-title">AP Drawing</span>
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Drawing rewards students who demonstrate a clear, sustained
+                  artistic inquiry supported by diverse media and strong written
+                  reflections.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Use multiple traditional mediums — College Board does not
+                    favor portfolios consisting solely of digital or graphic
+                    art.
+                  </li>
+                  <li>
+                    Progress shots and planning pages count toward your
+                    portfolio.
+                  </li>
+                  <li>
+                    Your artwork must be guided by your inquiry — not simply
+                    related to it.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-drawing"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🏺</span
+                  ><span class="ap-title">AP Art History</span>
+                </div>
+                <span class="ap-difficulty diff-hard">Medium-Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Art History requires memorization of 250 required works of
+                  art alongside strong analytical writing skills for FRQs.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Memorize the content, context, and function for all 250
+                    required works. There is no shortcut here.
+                  </li>
+                  <li>
+                    Use Quizlet — there are great community-made AP Art History
+                    decks covering every required work.
+                  </li>
+                  <li>
+                    Practice FRQs extensively. The exam includes 6 FRQ types,
+                    and timed practice is the most effective preparation.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-art-history"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/humanities/ap-art-history"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://quizlet.com/218571894/ap-art-history-250-flash-cards/"
+                    target="_blank"
+                    >Quizlet →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🎵</span
+                  ><span class="ap-title">AP Music Theory</span>
+                </div>
+                <span class="ap-difficulty diff-hard">Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Music Theory is uniquely challenging because of its aural
+                  component — you must hear, identify, and notate music under
+                  significant time pressure.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Speed up your MCQ pace in practice. There is very little
+                    time between audio clips on exam day.
+                  </li>
+                  <li>
+                    Practice harmonic dictation regularly. Focus on training
+                    your ear to hear the bass line.
+                  </li>
+                  <li>
+                    Print out released FRQs and practice with physical paper to
+                    better simulate exam conditions.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-music-theory"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.musictheory.net"
+                    target="_blank"
+                    >musictheory.net →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENGLISH -->
+        <p class="ap-group-label">English</p>
+        <div class="ap-newspaper">
+          <div class="ap-art-panel">
+            <div class="panel-emoji">📰</div>
+            <div class="panel-divider"></div>
+            <div class="panel-title">English</div>
+            <p class="panel-desc">
+              AP English courses develop rhetorical analysis, argumentation,
+              close reading, and timed essay writing — skills that transfer
+              directly to college writing.
+            </p>
+            <div class="panel-stat">2 courses · Lang &amp; Lit</div>
+            <div class="panel-divider"></div>
+            <p class="panel-desc" style="font-style: italic">
+              "Analyze choices, not devices."
+            </p>
+          </div>
+          <div class="ap-list">
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">📰</span
+                  ><span class="ap-title"
+                    >AP English Language and Composition</span
+                  >
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Lang focuses on rhetorical analysis, argumentation, and
+                  synthesis writing. The exam rewards students who analyze
+                  rhetorical choices in depth rather than listing devices
+                  superficially.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Always read the italicized introductory text before the
+                    passage — it hands you the rhetorical situation directly.
+                  </li>
+                  <li>
+                    Analyze choices, not devices. Instead of "the author uses a
+                    metaphor," write "the author compares X to Y in order to..."
+                  </li>
+                  <li>
+                    Select two major rhetorical choices and analyze them deeply
+                    rather than listing six devices superficially.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-english-language-and-composition/exam/past-exam-questions"
+                    target="_blank"
+                    >Past FRQs →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">📖</span
+                  ><span class="ap-title"
+                    >AP English Literature and Composition</span
+                  >
+                </div>
+                <span class="ap-difficulty diff-hard">Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Lit demands genuine close-reading ability, strong essay
+                  writing under time pressure, and familiarity with a wide range
+                  of literary works.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Take detailed, original notes throughout the year — avoid
+                    LitCharts and SparkNotes, which prevent analytical depth.
+                  </li>
+                  <li>
+                    Read at least one Shakespeare play thoroughly. Shakespeare's
+                    density prepares you to handle any passage the exam
+                    presents.
+                  </li>
+                  <li>
+                    Practice timed essay writing all year and cap practice
+                    sessions at 40 minutes per essay, no exceptions.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions"
+                    target="_blank"
+                    >Past FRQs →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HISTORY & SOCIAL SCIENCES -->
+        <p class="ap-group-label">History &amp; Social Sciences</p>
+        <div class="ap-newspaper">
+          <div class="ap-art-panel">
+            <div class="panel-emoji">🌐</div>
+            <div class="panel-divider"></div>
+            <div class="panel-title">History &amp; Social Sciences</div>
+            <p class="panel-desc">
+              These courses blend content knowledge with analytical writing.
+              DBQs, LEQs, and FRQs reward students who understand themes and
+              patterns — not just isolated facts.
+            </p>
+            <div class="panel-stat">10 courses available</div>
+            <div class="panel-divider"></div>
+            <p class="panel-desc" style="font-style: italic">
+              "Themes, not timelines."
+            </p>
+          </div>
+          <div class="ap-list">
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">✊</span
+                  ><span class="ap-title">AP African American Studies</span>
+                </div>
+                <span class="ap-difficulty diff-easy">Easy–Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  A relatively new AP course covering the history, culture, and
+                  contributions of African Americans from the African diaspora
+                  to the present day.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Engage seriously with primary sources and theoretical
+                    frameworks — this course rewards critical analysis over
+                    surface-level recall.
+                  </li>
+                  <li>
+                    Practice the FRQ format early using released materials on
+                    the College Board website.
+                  </li>
+                  <li>
+                    Connect themes across time periods rather than treating each
+                    unit in isolation.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-african-american-studies"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🗺️</span
+                  ><span class="ap-title"
+                    >AP Comparative Government and Politics</span
+                  >
+                </div>
+                <span class="ap-difficulty diff-easy">Easy–Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Comp Gov covers the political systems of six countries:
+                  China, Iran, Mexico, Nigeria, Russia, and the UK.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Create a comparison chart for each of the six countries
+                    across key dimensions.
+                  </li>
+                  <li>
+                    The FRQ section often asks you to compare two or more
+                    countries directly — practice this format explicitly.
+                  </li>
+                  <li>
+                    Keep up with current events in the six countries, as the
+                    exam regularly includes contemporary examples.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-comparative-government-and-politics"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🌐</span
+                  ><span class="ap-title">AP European History</span>
+                </div>
+                <span class="ap-difficulty diff-hard">Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Euro covers over 600 years of European history and requires
+                  both strong content knowledge and advanced essay writing
+                  skills, including the DBQ and LEQ.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Focus on thematic patterns (state building, religion,
+                    economics, social change) rather than memorizing isolated
+                    events.
+                  </li>
+                  <li>
+                    Practice DBQ document annotation: identify HAPP for each
+                    source.
+                  </li>
+                  <li>
+                    Write at least five timed practice LEQs and DBQs before exam
+                    day.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-european-history"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.youtube.com/@heimlershistory"
+                    target="_blank"
+                    >Heimler's History →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🧭</span
+                  ><span class="ap-title">AP Human Geography</span>
+                </div>
+                <span class="ap-difficulty diff-easy">Easy–Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Human Geography is commonly a student's first AP course.
+                  Vocabulary-heavy but conceptually approachable.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Master the vocabulary. A large share of MCQ questions can be
+                    answered correctly if you know key terms cold.
+                  </li>
+                  <li>
+                    Practice applying concepts to real-world examples — FRQs ask
+                    you to use specific evidence, not just define terms.
+                  </li>
+                  <li>
+                    Flashcards are particularly effective for this course given
+                    its vocabulary load.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-human-geography"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://youtube.com/@mrsinn"
+                    target="_blank"
+                    >Mr. Sinn →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">📈</span
+                  ><span class="ap-title">AP Macroeconomics</span>
+                </div>
+                <span class="ap-difficulty diff-easy">Easy–Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Macro covers the economy as a whole — GDP, inflation,
+                  unemployment, fiscal policy, and monetary policy.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Master the core graphs: the PPC, AD/AS model, and Money
+                    Market — they appear constantly on both MCQs and FRQs.
+                  </li>
+                  <li>
+                    Practice drawing and labeling graphs quickly and accurately.
+                  </li>
+                  <li>
+                    Take as many released FRQs as possible — the format is
+                    highly repetitive.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-macroeconomics"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">📉</span
+                  ><span class="ap-title">AP Microeconomics</span>
+                </div>
+                <span class="ap-difficulty diff-easy">Easy</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Micro examines individual consumers, firms, and markets. It
+                  has one of the higher rates of 5s among AP exams.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Learn and practice all the key supply and demand graphs, as
+                    well as cost curves for firms.
+                  </li>
+                  <li>
+                    Understand market structures (perfect competition, monopoly,
+                    oligopoly) thoroughly, including MR = MC.
+                  </li>
+                  <li>
+                    Complete all available past FRQs from College Board and
+                    check your responses against the scoring guidelines.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-microeconomics"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/economics-finance-domain/ap-microeconomics"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🧠</span
+                  ><span class="ap-title">AP Psychology</span>
+                </div>
+                <span class="ap-difficulty diff-easy">Easy</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Psychology is widely considered one of the most
+                  approachable AP courses, covering major theories and research
+                  in psychology.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Vocabulary is the core of this exam. Build flashcard decks
+                    for each unit and review them consistently.
+                  </li>
+                  <li>
+                    FRQs are straightforward — they ask you to define terms and
+                    apply them to a scenario.
+                  </li>
+                  <li>
+                    Learn all major theorists and their associated theories.
+                    Confusing Freud with Erikson or Skinner with Bandura is a
+                    common and costly mistake.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-psychology"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://youtube.com/@mrsinn"
+                    target="_blank"
+                    >Mr. Sinn →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🏛️</span
+                  ><span class="ap-title"
+                    >AP United States Government and Politics</span
+                  >
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Gov covers the structure and function of U.S. government.
+                  The 15 required foundational documents and 9 required Supreme
+                  Court cases are tested heavily.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Know all 15 required documents and 9 required Supreme Court
+                    cases thoroughly.
+                  </li>
+                  <li>
+                    The Argument Essay FRQ requires you to write a structured
+                    argument using a required document.
+                  </li>
+                  <li>
+                    Distinguish between the formal powers and informal powers of
+                    each branch.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-united-states-government-and-politics"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/humanities/ap-us-government-and-politics"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.youtube.com/@heimlershistory"
+                    target="_blank"
+                    >Heimler's History →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🇺🇸</span
+                  ><span class="ap-title"
+                    >AP United States History (APUSH)</span
+                  >
+                </div>
+                <span class="ap-difficulty diff-hard">Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  APUSH covers American history from 1491 to the present across
+                  nine chronological periods. It demands both content knowledge
+                  and strong analytical writing.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Focus on understanding broad historical themes and patterns
+                    rather than memorizing isolated dates and facts.
+                  </li>
+                  <li>
+                    Practice DBQ document annotation from early in the year:
+                    identify historical context, audience, purpose, and point of
+                    view.
+                  </li>
+                  <li>Write and outline practice LEQs and SAQs regularly.</li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-united-states-history"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/humanities/ap-us-history"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.youtube.com/@heimlershistory"
+                    target="_blank"
+                    >Heimler's History →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🌏</span
+                  ><span class="ap-title">AP World History: Modern</span>
+                </div>
+                <span class="ap-difficulty diff-hard">Medium-Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP World History covers global history from 1200 CE to the
+                  present. The scope is vast, and the DBQ and LEQ essay formats
+                  require strong analytical writing.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Learn the five course themes and use them to organize your
+                    knowledge.
+                  </li>
+                  <li>
+                    Prioritize the DBQ. It requires you to incorporate
+                    documents, outside evidence, and contextualization all in
+                    one essay.
+                  </li>
+                  <li>
+                    Start practicing FRQs earlier than you think you need to.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-world-history"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.youtube.com/@heimlershistory"
+                    target="_blank"
+                    >Heimler's History →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://youtube.com/@freeman_pedia?si=ACqKIS-ekOP_H-p3"
+                    target="_blank"
+                    >Freeman Pedia →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MATH -->
+        <p class="ap-group-label">Math</p>
+        <div class="ap-newspaper">
+          <div class="ap-art-panel">
+            <div class="panel-emoji">∫</div>
+            <div class="panel-divider"></div>
+            <div class="panel-title">Math</div>
+            <p class="panel-desc">
+              AP Math courses range from Precalculus through Calculus BC and
+              Statistics. Conceptual understanding and timed practice are more
+              valuable than formula memorization alone.
+            </p>
+            <div class="panel-stat">4 courses available</div>
+            <div class="panel-divider"></div>
+            <p class="panel-desc" style="font-style: italic">
+              "Don't just memorize steps — understand why each technique works."
+            </p>
+          </div>
+          <div class="ap-list">
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">∫</span
+                  ><span class="ap-title">AP Calculus AB</span>
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Calculus AB covers limits, derivatives, and integrals —
+                  roughly equivalent to one semester of college calculus.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Make sure your precalculus and algebra foundations are solid
+                    before diving in.
+                  </li>
+                  <li>
+                    Create and review flashcards for derivative rules, integral
+                    formulas, and key theorems throughout the year.
+                  </li>
+                  <li>
+                    Practice FRQs weekly and review scoring guidelines
+                    carefully.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-calculus-ab"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/math/ap-calculus-ab"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://youtube.com/playlist?list=PLTyfDsD2vBgOEAi4vkiYq1RXZPm2PIEeA"
+                    target="_blank"
+                    >Project Explained →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">∑</span
+                  ><span class="ap-title">AP Calculus BC</span>
+                </div>
+                <span class="ap-difficulty diff-hard">Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Calculus BC covers all of AB plus parametric equations,
+                  polar functions, vector-valued functions, and infinite series.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Do not just memorize steps — understand why each technique
+                    works.
+                  </li>
+                  <li>
+                    Series convergence and polar/parametric functions are
+                    BC-only topics that require extra time. Start on them early.
+                  </li>
+                  <li>
+                    Practice timed MCQs regularly. The non-calculator section
+                    averages two minutes per question.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-calculus-bc"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/math/ap-calculus-bc"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://youtube.com/playlist?list=PLTyfDsD2vBgOEAi4vkiYq1RXZPm2PIEeA"
+                    target="_blank"
+                    >Project Explained →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">📐</span
+                  ><span class="ap-title">AP Precalculus</span>
+                </div>
+                <span class="ap-difficulty diff-easy">Easy–Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Precalculus covers polynomial, rational, exponential,
+                  logarithmic, and trigonometric functions with an emphasis on
+                  modeling.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Master function transformations — shifting, stretching, and
+                    reflecting graphs appears throughout the course.
+                  </li>
+                  <li>
+                    This course serves as strong preparation for AP Calculus.
+                    Treat it seriously.
+                  </li>
+                  <li>
+                    Practice constructing and interpreting mathematical models
+                    from real-world scenarios.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-precalculus"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://youtube.com/@thealgebros"
+                    target="_blank"
+                    >The Algebros →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://youtube.com/@mporinchak"
+                    target="_blank"
+                    >Michael Porinchak →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">📊</span
+                  ><span class="ap-title">AP Statistics</span>
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Statistics covers data collection, probability, statistical
+                  inference, and interpretation. Writing clear explanations in
+                  context is as important as calculations.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Memorize FRQ sentence structures — statistical conclusions
+                    must be stated in context with appropriate language.
+                  </li>
+                  <li>
+                    Always interpret your results in context. An answer with no
+                    interpretation often earns zero credit.
+                  </li>
+                  <li>
+                    For inference procedures, develop a checklist routine: state
+                    the procedure, check conditions, calculate, and conclude.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-statistics"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/math/ap-statistics"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://youtube.com/@mporinchak"
+                    target="_blank"
+                    >Michael Porinchak →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPUTER SCIENCE -->
+        <p class="ap-group-label">Computer Science</p>
+        <div class="ap-newspaper">
+          <div class="ap-art-panel">
+            <div class="panel-emoji">💻</div>
+            <div class="panel-divider"></div>
+            <div class="panel-title">Computer Science</div>
+            <p class="panel-desc">
+              AP CS courses range from broad computing concepts to full
+              object-oriented programming in Java. Both reward consistent
+              hands-on practice over passive reading.
+            </p>
+            <div class="panel-stat">2 courses · CSP &amp; CS A</div>
+            <div class="panel-divider"></div>
+            <p class="panel-desc" style="font-style: italic">
+              "Write and run code daily, even for small problems."
+            </p>
+          </div>
+          <div class="ap-list">
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">☕</span
+                  ><span class="ap-title">AP Computer Science A</span>
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP CS A teaches object-oriented programming in Java, including
+                  data structures, algorithms, and program design.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Write and run code daily, even for small problems. Reading
+                    code without writing it is not sufficient preparation.
+                  </li>
+                  <li>
+                    Master the Java Quick Reference sheet provided during the
+                    exam.
+                  </li>
+                  <li>
+                    Trace through programs manually (on paper) to develop
+                    debugging intuition.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-computer-science-a"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://codehs.com/textbook/apcsa_textbook/"
+                    target="_blank"
+                    >CodeHS →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">💻</span
+                  ><span class="ap-title">AP Computer Science Principles</span>
+                </div>
+                <span class="ap-difficulty diff-easy">Easy</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP CSP is the most approachable AP course by student ratings.
+                  It covers broad computing concepts without requiring deep
+                  programming knowledge.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    The Create Performance Task requires you to submit a working
+                    program with video and written responses. Start it well
+                    before the deadline.
+                  </li>
+                  <li>
+                    Focus on understanding the conceptual vocabulary
+                    (abstraction, iteration, Boolean logic, binary, etc.).
+                  </li>
+                  <li>
+                    The MCQ exam is generally straightforward for students who
+                    engage with the material throughout the year.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-computer-science-principles"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://code.org/educate/csp"
+                    target="_blank"
+                    >Code.org →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCIENCES -->
+        <p class="ap-group-label">Sciences</p>
+        <div class="ap-newspaper">
+          <div class="ap-art-panel">
+            <div class="panel-emoji">🧬</div>
+            <div class="panel-divider"></div>
+            <div class="panel-title">Sciences</div>
+            <p class="panel-desc">
+              AP Science courses reward conceptual reasoning, lab-based
+              thinking, and strong FRQ writing. Finishing content early to allow
+              a full month of review is the most consistent predictor of
+              success.
+            </p>
+            <div class="panel-stat">7 courses available</div>
+            <div class="panel-divider"></div>
+            <p class="panel-desc" style="font-style: italic">
+              "Aim to finish content by March so you have a full month to
+              review."
+            </p>
+          </div>
+          <div class="ap-list">
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🧬</span>
+                  <span class="ap-title">AP Biology</span>
+                </div>
+                <span class="ap-difficulty diff-hard">Hard</span>
+                <span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Biology is one of the most content-heavy AP courses,
+                  spanning molecules to ecosystems.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Aim to finish the course content by March so you have 1–2
+                    months dedicated entirely to review.
+                  </li>
+                  <li>
+                    Practice past FRQs consistently — College Board reuses
+                    similar conceptual questions across years.
+                  </li>
+                  <li>
+                    Use flashcards for vocabulary and active recall for
+                    concepts.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-biology"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.bozemanscience.com/ap-biology"
+                    target="_blank"
+                    >Bozeman Science →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/science/ap-biology"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://youtube.com/@apbiopenguinsinstareview?si=oXb4fEJ6QiG8kY1S"
+                    target="_blank"
+                    >AP Bio Penguins →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">⚗️</span
+                  ><span class="ap-title">AP Chemistry</span>
+                </div>
+                <span class="ap-difficulty diff-hard">Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Chemistry is widely considered one of the most demanding AP
+                  courses, emphasizing conceptual understanding and
+                  problem-solving over pure memorization.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Do not take AP Chem without prior chemistry experience.
+                  </li>
+                  <li>
+                    Focus on understanding why reactions happen, not just how to
+                    balance equations.
+                  </li>
+                  <li>
+                    Practice interpreting graphs, data tables, and experimental
+                    results.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-chemistry"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/science/ap-chemistry-beta"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://youtube.com/@jeremykrug"
+                    target="_blank"
+                    >Jeremy Krug →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">♻️</span
+                  ><span class="ap-title">AP Environmental Science</span>
+                </div>
+                <span class="ap-difficulty diff-easy">Easy–Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Environmental Science is considered one of the more
+                  accessible AP science courses, but many students underestimate
+                  the quantitative component.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Do not ignore the math. Calculation-based FRQs appear every
+                    year.
+                  </li>
+                  <li>
+                    Learn current environmental legislation (Clean Air Act,
+                    Clean Water Act, ESA, etc.).
+                  </li>
+                  <li>
+                    Current events and real-world case studies are fair game.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-environmental-science"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/science/ap-college-environmental-science"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://youtube.com/@mr.smedes"
+                    target="_blank"
+                    >Mr. Smedes →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">⚡</span
+                  ><span class="ap-title">AP Physics 1: Algebra-Based</span>
+                </div>
+                <span class="ap-difficulty diff-hard">Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Physics 1 has one of the lowest pass rates of any AP exam
+                  (~47%) because it demands genuine conceptual reasoning, not
+                  just formula application.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Focus on understanding physical relationships conceptually.
+                    Plugging numbers into formulas without understanding will
+                    not earn full credit on FRQs.
+                  </li>
+                  <li>
+                    Practice explaining your reasoning in complete sentences.
+                  </li>
+                  <li>Work through as many FRQs as possible.</li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-physics-1"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.milliganphysics.com"
+                    target="_blank"
+                    >Mr. M's World →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/science/ap-college-physics-1"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🔋</span
+                  ><span class="ap-title">AP Physics 2: Algebra-Based</span>
+                </div>
+                <span class="ap-difficulty diff-hard">Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Physics 2 covers fluid dynamics, thermodynamics,
+                  electricity, magnetism, optics, and quantum/atomic physics.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    AP Physics 1 is a strong prerequisite. Revisit those
+                    fundamentals if needed.
+                  </li>
+                  <li>
+                    Electricity and magnetism is typically the most challenging
+                    unit — allocate additional study time here.
+                  </li>
+                  <li>
+                    Practice diagram-based questions extensively: circuit, ray,
+                    and field line drawings all appear on FRQs.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-physics-2"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.khanacademy.org/science/ap-physics-2"
+                    target="_blank"
+                    >Khan Academy →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.milliganphysics.com"
+                    target="_blank"
+                    >Mr. M's World →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🔌</span
+                  ><span class="ap-title"
+                    >AP Physics C: Electricity and Magnetism</span
+                  >
+                </div>
+                <span class="ap-difficulty diff-hard">Very Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Physics C: E&amp;M is calculus-based and considered the
+                  hardest AP science course, covering electric fields, Gauss's
+                  law, circuits, magnetic fields, and electromagnetic induction.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Concurrent enrollment in AP Calculus BC is essentially
+                    required.
+                  </li>
+                  <li>Master Gauss's Law, Faraday's Law, and Ampere's Law.</li>
+                  <li>Work through every available past FRQ.</li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-physics-c-electricity-and-magnetism"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.milliganphysics.com"
+                    target="_blank"
+                    >Mr. M's World →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🚀</span
+                  ><span class="ap-title">AP Physics C: Mechanics</span>
+                </div>
+                <span class="ap-difficulty diff-hard">Very Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Physics C: Mechanics covers kinematics, Newton's laws,
+                  energy, momentum, rotation, and oscillation using calculus.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Calculus is used throughout — derivatives and integrals
+                    appear in kinematics, work, and rotational dynamics
+                    problems.
+                  </li>
+                  <li>
+                    Rotational dynamics is the most difficult unit for most
+                    students. Begin practicing it well before the exam.
+                  </li>
+                  <li>
+                    Draw clear, labeled free-body diagrams for every mechanics
+                    problem.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-physics-c-mechanics"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                  <a
+                    class="ap-link"
+                    href="https://www.milliganphysics.com"
+                    target="_blank"
+                    >Mr. M's World →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WORLD LANGUAGES -->
+        <p class="ap-group-label">World Languages &amp; Cultures</p>
+        <div class="ap-newspaper">
+          <div class="ap-art-panel">
+            <div class="panel-emoji">🌍</div>
+            <div class="panel-divider"></div>
+            <div class="panel-title">World Languages</div>
+            <p class="panel-desc">
+              AP Language exams test all four skills: reading, writing,
+              listening, and speaking. Daily immersion in authentic media is the
+              single most effective way to prepare.
+            </p>
+            <div class="panel-stat">8 languages offered</div>
+            <div class="panel-divider"></div>
+            <p class="panel-desc" style="font-style: italic">
+              "Consume authentic media daily — it builds fluency textbooks
+              can't."
+            </p>
+          </div>
+          <div class="ap-list">
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🇨🇳</span
+                  ><span class="ap-title">AP Chinese Language and Culture</span>
+                </div>
+                <span class="ap-difficulty diff-easy"
+                  >Easy (for native/heritage speakers)</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Chinese has the highest pass rate of any AP exam (~89%)
+                  largely because most test-takers are heritage or native
+                  speakers.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Practice the speaking components separately — formal
+                    presentations and interpersonal conversations require
+                    specific register even for fluent speakers.
+                  </li>
+                  <li>
+                    Study cultural topics systematically: festivals, traditions,
+                    geography, and modern Chinese society.
+                  </li>
+                  <li>
+                    Engage with Chinese media (news, shows, podcasts) regularly
+                    to maintain listening comprehension.
+                  </li>
+                  <li>
+                    Side Note: If you're really desperate, you can download
+                    小红书 and scroll there instead of TikTok or Instagram to
+                    practice everyday Chinese skills.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-chinese-language-and-culture"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🇫🇷</span
+                  ><span class="ap-title">AP French Language and Culture</span>
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP French tests all four language skills and cultural
+                  knowledge of the French-speaking world.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Consume French-language media daily — news broadcasts,
+                    films, and podcasts build authentic listening comprehension
+                    far better than textbook exercises.
+                  </li>
+                  <li>
+                    Practice the Presentational Speaking task specifically.
+                  </li>
+                  <li>
+                    Build vocabulary for cultural and societal themes
+                    (environment, technology, family, education).
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-french-language-and-culture"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🇩🇪</span
+                  ><span class="ap-title">AP German Language and Culture</span>
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP German follows the same format as other AP language exams,
+                  testing all four language skills.
+                </p>
+                <ul class="ap-tips">
+                  <li>Engage with German-language media regularly.</li>
+                  <li>
+                    Pay close attention to case endings and verb conjugations —
+                    grammatical accuracy affects scores on written and spoken
+                    tasks.
+                  </li>
+                  <li>
+                    Practice writing structured argumentative essays in German.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-german-language-and-culture"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🇮🇹</span
+                  ><span class="ap-title">AP Italian Language and Culture</span>
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Italian is one of the less commonly offered AP language
+                  exams, covering all four language skills and Italian cultural
+                  knowledge.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Immerse yourself in Italian media — films, RAI news, and
+                    Italian music are all effective.
+                  </li>
+                  <li>Practice all four exam tasks in a balanced way.</li>
+                  <li>
+                    Focus on cultural themes (art, history, family structure,
+                    food).
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-italian-language-and-culture"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🇯🇵</span
+                  ><span class="ap-title"
+                    >AP Japanese Language and Culture</span
+                  >
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Japanese tests all four language skills with an emphasis on
+                  formal communication. Mastery of hiragana, katakana, and
+                  common kanji is essential.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Be proficient in typing Japanese using both
+                    hiragana/katakana input and kanji conversion — the written
+                    exam tasks are computer-based.
+                  </li>
+                  <li>
+                    Practice formal writing registers (teineigo and keigo)
+                    specifically.
+                  </li>
+                  <li>
+                    Consume Japanese-language media (NHK Web Easy is excellent).
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-japanese-language-and-culture"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🏛️</span
+                  ><span class="ap-title">AP Latin</span>
+                </div>
+                <span class="ap-difficulty diff-hard">Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Latin focuses on translating and analyzing passages from
+                  Caesar's Gallic Wars and Vergil's Aeneid.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Read and translate the required texts repeatedly throughout
+                    the year, not just in the weeks before the exam.
+                  </li>
+                  <li>Memorize the required vocabulary lists.</li>
+                  <li>
+                    Practice sight-reading starting early in the year to build
+                    translation fluency beyond the required texts.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-latin"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">🇪🇸</span
+                  ><span class="ap-title">AP Spanish Language and Culture</span>
+                </div>
+                <span class="ap-difficulty diff-medium">Medium</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Spanish Language is one of the most popular AP courses,
+                  testing all four language skills with authentic
+                  Spanish-language sources.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Listen to Spanish-language podcasts, news (BBC Mundo, NPR en
+                    Español), and shows.
+                  </li>
+                  <li>
+                    Practice speaking regularly — record yourself on the
+                    presentational tasks and listen back critically.
+                  </li>
+                  <li>
+                    Build vocabulary around recurring thematic areas: families,
+                    communities, science and technology, environment, and
+                    beauty/aesthetics.
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-spanish-language-and-culture"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-item-header" onclick="toggleAP(this)">
+                <div class="ap-item-left">
+                  <span class="ap-emoji">📜</span
+                  ><span class="ap-title"
+                    >AP Spanish Literature and Culture</span
+                  >
+                </div>
+                <span class="ap-difficulty diff-hard">Hard</span
+                ><span class="ap-chevron">▼</span>
+              </div>
+              <div class="ap-body">
+                <p>
+                  AP Spanish Lit requires reading, analyzing, and writing about
+                  a required list of Spanish and Latin American literary works
+                  in Spanish.
+                </p>
+                <ul class="ap-tips">
+                  <li>
+                    Read and annotate all required texts carefully.
+                    Understanding historical and cultural context significantly
+                    improves analysis.
+                  </li>
+                  <li>
+                    Practice the AP-style essay tasks in Spanish — literary
+                    commentary, comparison essays, and textual analysis — under
+                    timed conditions.
+                  </li>
+                  <li>
+                    Learn literary terminology in Spanish (el narrador, el
+                    motivo, el tono, la ironía, etc.).
+                  </li>
+                </ul>
+                <div class="ap-links">
+                  <a
+                    class="ap-link"
+                    href="https://apcentral.collegeboard.org/courses/ap-spanish-literature-and-culture"
+                    target="_blank"
+                    >College Board →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END AP COURSES -->
+
+      <!-- ═══════════════════════════════════════════
+           02 — TEST PREP
+      ════════════════════════════════════════════ -->
+      <div id="test" class="content-section">
+        <div class="section-header">
+          <h2>Test Prep</h2>
+          <span class="section-number">02</span>
+        </div>
+        <p class="section-intro">
+          The SAT, ACT, and PSAT don't have to be intimidating. Use these free
+          and low-cost resources to practice under real test conditions,
+          identify weak spots, and boost your score.
+        </p>
+
+        <!-- 4 cards in one even row -->
+        <div class="cards">
+          <div class="card">
+            <div class="card-icon">📐</div>
+            <h4>SAT Prep</h4>
+            <p>
+              Full-length practice tests, personalized practice, and thousands
+              of problems from Khan Academy, OnePrep, and College Board's
+              Question Bank.
+            </p>
+            <a
+              href="https://www.khanacademy.org/test-prep/v2-sat-math"
+              target="_blank"
+              >SAT Math Practice →</a
+            >
+            <a
+              href="https://www.khanacademy.org/test-prep/sat-reading-and-writing"
+              target="_blank"
+              >SAT Reading Practice →</a
+            >
+            <a href="https://www.oneprep.xyz/question-bank" target="_blank"
+              >OnePrep →</a
+            >
+            <a
+              href="https://satsuiteeducatorquestionbank.collegeboard.org/digital/search"
+              target="_blank"
+              >CollegeBoard Question Bank →</a
+            >
+          </div>
+          <div class="card">
+            <div class="card-icon">🎯</div>
+            <h4>ACT Prep</h4>
+            <p>
+              Free ACT practice tests, section-by-section tips, and timing
+              strategies from PrepScholar.
+            </p>
+            <a
+              href="https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/free-act-test-prep.html"
+              target="_blank"
+              >Free ACT Practice Tests →</a
+            >
+          </div>
+          <div class="card">
+            <div class="card-icon">🏆</div>
+            <h4>PSAT / NMSQT</h4>
+            <p>
+              Practice with official College Board PSAT materials and see if you
+              qualify for National Merit.
+            </p>
+            <a
+              href="https://satsuite.collegeboard.org/psat-nmsqt"
+              target="_blank"
+              >College Board PSAT →</a
+            >
+          </div>
+          <div class="card">
+            <div class="card-icon">📊</div>
+            <h4>Score Comparison</h4>
+            <p>
+              Use this converter to decide whether the SAT or ACT plays to your
+              strengths before you register.
+            </p>
+            <a
+              href="https://www.compassprep.com/concordance-and-conversion-sat-and-act-scores/"
+              target="_blank"
+              >SAT ↔ ACT Converter →</a
+            >
+          </div>
+        </div>
+
+        <!-- 3 videos in one centred row -->
+        <p class="video-section-label">Helpful Videos</p>
+        <div class="video-grid-testprep">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/mNWw4DTof7I?si=9aPUbbUiB-JmI2qb"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="video-info">
+              <h5>SAT Tips &amp; Tricks</h5>
+              <p>Tips and testing strategies for every section</p>
+            </div>
+          </div>
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/f2DnOdLBG0k?si=eA5LYwRt-JosBe9c"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="video-info">
+              <h5>ACT: How to Study</h5>
+              <p>Everything you need to know to ace the ACT.</p>
+            </div>
+          </div>
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/Es29mH7sN_w?si=rGeoJ41b-2R7qdFg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="video-info">
+              <h5>Test-Taking Strategies</h5>
+              <p>Best test-taking strategies to ace your exams.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════
+           03 — STUDY METHODS (two-column layout)
+      ════════════════════════════════════════════ -->
+      <div id="methods" class="content-section">
+        <div class="section-header">
+          <h2>Study Methods</h2>
+          <span class="section-number">03</span>
+        </div>
+        <p class="section-intro">
+          Working hard isn't enough — working smart is. These research-backed
+          techniques will help you retain more, stress less, and actually feel
+          prepared on exam day.
+        </p>
+
+        <div class="methods-layout">
+          <!-- Left: tip list -->
+          <div class="tips-list">
+            <div class="tip-item">
+              <div class="tip-num">01</div>
+              <div class="tip-text">
+                <h5>Active Recall</h5>
+                <p>
+                  Instead of re-reading notes, test yourself on the material.
+                  Close the book and write down everything you remember. This
+                  forces your brain to retrieve information, which is how
+                  long-term memory forms. Flashcard apps like Anki are great for
+                  this.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-num">02</div>
+              <div class="tip-text">
+                <h5>Spaced Repetition</h5>
+                <p>
+                  Study a topic, then revisit it after 1 day, then 3 days, then
+                  a week. This "spacing effect" dramatically boosts retention
+                  compared to cramming. Anki automates this for you based on how
+                  well you know each card.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-num">03</div>
+              <div class="tip-text">
+                <h5>The Pomodoro Technique</h5>
+                <p>
+                  Study for 25 minutes, then take a 5-minute break. Repeat 4
+                  times, then take a longer 15–30 minute break. This prevents
+                  burnout and keeps your focus sharp throughout a long study
+                  session.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-num">04</div>
+              <div class="tip-text">
+                <h5>The Feynman Technique</h5>
+                <p>
+                  Pick a concept. Explain it out loud as if you're teaching it
+                  to a 5-year-old. Wherever you get stuck is exactly where your
+                  understanding has gaps — go back and fill them in. Then try
+                  again.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-num">05</div>
+              <div class="tip-text">
+                <h5>Mind Mapping</h5>
+                <p>
+                  Draw a central idea in the middle of a blank page, then branch
+                  out with related concepts, subtopics, and connections.
+                  Especially useful for history, biology, and any subject with
+                  lots of interconnected ideas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: quote + full-width video -->
+          <div class="methods-right">
+            <div class="methods-quote">
+              <blockquote>
+                "The secret to studying effectively isn't working longer — it's
+                working in a way that matches how your brain actually learns."
+              </blockquote>
+              <cite>Research-backed strategies below</cite>
+            </div>
+            <div class="video-card" style="flex: 1">
+              <iframe
+                src="https://www.youtube.com/embed/ZfF2KPazvH4?si=8NV6tRID3BGEZRRb"
+                title="How to Study Effectively"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="
+                  width: 100%;
+                  aspect-ratio: 16/9;
+                  border: none;
+                  display: block;
+                "
+              ></iframe>
+              <div class="video-info">
+                <h5>How to Study Effectively</h5>
+                <p>
+                  A science-backed breakdown of the best (and worst) study
+                  habits.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════
+           04 — HELPFUL RESOURCES
+      ════════════════════════════════════════════ -->
+      <div id="help" class="content-section">
+        <div class="section-header">
+          <h2>Helpful Resources</h2>
+          <span class="section-number">04</span>
+        </div>
+        <p class="section-intro">
+          A curated collection of free tools, tutoring services, and websites to
+          support you across every subject. Bookmark the ones that work for you.
+        </p>
+
+        <div class="cards-wrap">
+          <div class="card">
+            <div class="card-icon">🎓</div>
+            <h4>Khan Academy</h4>
+            <p>
+              Free lessons on every subject from math to SAT prep. Great for
+              filling in knowledge gaps at your own pace.
+            </p>
+            <a href="https://www.khanacademy.org" target="_blank"
+              >Visit Khan Academy →</a
+            >
+          </div>
+          <div class="card">
+            <div class="card-icon">🃏</div>
+            <h4>Quizlet</h4>
+            <p>
+              Create or find pre-made flashcard sets for any course. Use Learn
+              mode and practice tests for active recall.
+            </p>
+            <a href="https://www.quizlet.com" target="_blank"
+              >Visit Quizlet →</a
+            >
+          </div>
+          <div class="card">
+            <div class="card-icon">🂾</div>
+            <h4>Anki</h4>
+            <p>
+              A powerful spaced repetition flashcard app used by med students
+              and top scorers worldwide. Free on desktop.
+            </p>
+            <a href="https://apps.ankiweb.net" target="_blank"
+              >Download Anki →</a
+            >
+          </div>
+          <div class="card">
+            <div class="card-icon">✏️</div>
+            <h4>Purdue OWL</h4>
+            <p>
+              The gold standard for writing help — MLA, APA, Chicago citations,
+              essay structure, and grammar guides.
+            </p>
+            <a href="https://owl.purdue.edu" target="_blank"
+              >Visit Purdue OWL →</a
+            >
+          </div>
+          <div class="card">
+            <div class="card-icon">🧮</div>
+            <h4>Wolfram Alpha</h4>
+            <p>
+              Solve complex math, chemistry, and physics problems step-by-step.
+              Excellent for checking your work.
+            </p>
+            <a href="https://www.wolframalpha.com" target="_blank"
+              >Visit Wolfram Alpha →</a
+            >
+          </div>
+          <div class="card">
+            <div class="card-icon">📅</div>
+            <h4>Google Calendar</h4>
+            <p>
+              Plan your study schedule, set reminders for test dates, and block
+              off time for each subject each week.
+            </p>
+            <a href="https://calendar.google.com" target="_blank"
+              >Open Google Calendar →</a
+            >
+          </div>
+          <div class="card">
+            <div class="card-icon">💬</div>
+            <h4>Notion</h4>
+            <p>
+              Your all-in-one workspace for notes, tasks, and projects. Write,
+              plan, and organize everything in one simple app.
+            </p>
+            <a href="https://www.notion.com/product" target="_blank"
+              >Open Notion →</a
+            >
+          </div>
+          <div class="card">
+            <div class="card-icon">5️⃣</div>
+            <h4>Fiveable</h4>
+            <p>
+              The ultimate study platform for students tackling AP exams and
+              beyond. Stream live reviews, access study guides, and connect with
+              engaging communities.
+            </p>
+            <a href="https://fiveable.me/" target="_blank">Open Fiveable →</a>
+          </div>
+        </div>
+
+        <!-- Free Tutoring -->
+        <p class="video-section-label">Free Tutoring Options</p>
+        <div class="resource-row">
+          <a
+            class="resource-pill"
+            href="https://www.khanacademy.org"
+            target="_blank"
+          >
+            <span>🎓</span> Khan Academy (all subjects)
+          </a>
+          <a
+            class="resource-pill"
+            href="https://youtube.com/@theorganicchemistrytutor"
+            target="_blank"
+          >
+            <span>🧪</span> The Organic Chemistry Tutor (science)
+          </a>
+          <a
+            class="resource-pill"
+            href="https://youtube.com/@thealgebros"
+            target="_blank"
+          >
+            <span>🔢</span> The Algebros (math)
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end .content-sections -->
+
+    <script>
+      function toggleAP(header) {
+        const item = header.parentElement;
+        item.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
